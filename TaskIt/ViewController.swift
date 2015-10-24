@@ -98,6 +98,35 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         performSegueWithIdentifier("showTaskDetail", sender: self)
     }
+    
+    // Size of Header sections
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 25
+    }
+    
+    // Header Titles
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0{
+            return "To Do"
+        } else {
+            return "Completed"
+        }
+    }
+    
+    // switch tasks from incompelte to complete and vise versa
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let thisTask = baseArray[indexPath.section][indexPath.row]
+        
+        if indexPath.section == 0{
+            var newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: true)
+            baseArray[1].append(newTask)
+        }else{
+            var newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: false)
+            baseArray[0].append(newTask)
+        }
+        baseArray[indexPath.section].removeAtIndex(indexPath.row)
+        tableView.reloadData()
+    }
 
 }
 
