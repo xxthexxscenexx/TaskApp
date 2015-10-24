@@ -18,6 +18,7 @@
 		DCC7319C1BDBDEE400BBB579 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7319B1BDBDEE400BBB579 /* TaskDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DCC7319E1BDBEF9800BBB579 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7319D1BDBEF9800BBB579 /* Date.swift */; settings = {ASSET_TAGS = (); }; };
 		DCC731A01BDBF39000BBB579 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DCC731A21BDC29F500BBB579 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC731A11BDC29F500BBB579 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DCC7319B1BDBDEE400BBB579 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		DCC7319D1BDBEF9800BBB579 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		DCC731A11BDC29F500BBB579 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC731A21BDC29F500BBB579 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		DCC7315D1BDBC8E400BBB579 = {
 			isa = PBXGroup;
 			children = (
+				DCC731A11BDC29F500BBB579 /* CoreData.framework */,
 				DCC731681BDBC8E400BBB579 /* TaskIt */,
 				DCC7317D1BDBC8E400BBB579 /* TaskItTests */,
 				DCC731881BDBC8E400BBB579 /* TaskItUITests */,
