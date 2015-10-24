@@ -193,7 +193,11 @@
                                 <action selector="CancelButtonTapped:" destination="wOe-ol-s2L" id="uM4-SP-Wg2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Hev-NK-uZr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Hev-NK-uZr">
+                            <connections>
+                                <action selector="DoneBarButtonPressed:" destination="wOe-ol-s2L" id="IOV-uC-v2l"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

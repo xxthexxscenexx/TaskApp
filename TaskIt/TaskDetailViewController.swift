@@ -13,6 +13,7 @@ class TaskDetailViewController: UIViewController {
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var subTaskTextField: UITextField!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
+    var mainVC: ViewController!
     
     @IBAction func CancelButtonTapped(sender: UIBarButtonItem) {
         // make current view controller disappear from screen 
@@ -34,6 +35,11 @@ class TaskDetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Done bar button item has been pressed 
+    @IBAction func DoneBarButtonPressed(sender: UIBarButtonItem) {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
 }

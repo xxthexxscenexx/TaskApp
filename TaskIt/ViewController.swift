@@ -20,16 +20,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let date1 = Date.from(2014, month: 05, day: 20)
-        let date2 = Date.from(2014, month: 03, day: 3)
-        let date3 = Date.from(2014, month: 12, day: 13)
+        //let date1 = Date.from(2014, month: 05, day: 20)
+        //let date2 = Date.from(2014, month: 03, day: 3)
+        //let date3 = Date.from(2014, month: 12, day: 13)
         
-        let task1 = taskModel(task: "Study French", subtask: "Verbs", date: date1)
-        let task2 = taskModel(task: "Eat Dinner", subtask: "Burgers", date: date2)
-        taskArray = [task1, task2, taskModel(task: "Gym", subtask: "Leg Day", date: date3)]
+        //let task1 = taskModel(task: "Study French", subtask: "Verbs", date: date1)
+        //let task2 = taskModel(task: "Eat Dinner", subtask: "Burgers", date: date2)
+        //taskArray = [task1, task2, taskModel(task: "Gym", subtask: "Leg Day", date: date3)]
 
         self.tableView.reloadData()
         
+    }
+    
+    // Refresh information insdie of the table view
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +49,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let indexPath = self.tableView.indexPathForSelectedRow
             let thisTask = taskArray[indexPath!.row]
             detailVC.detailTaskModel = thisTask
+            detailVC.mainVC = self 
+        } else if segue.identifier == "ShowTaskAdd"{
+            let addTaskVC: AddTaskViewController = segue.destinationViewController as! AddTaskViewController
+            addTaskVC.mainVC = self
         }
     }
     
