@@ -39,6 +39,8 @@ class TaskDetailViewController: UIViewController {
     
     // Done bar button item has been pressed 
     @IBAction func DoneBarButtonPressed(sender: UIBarButtonItem) {
+        let task = taskModel(task: taskTextField.text!, subtask: subTaskTextField.text!, date: dueDatePicker.date, completed: false)
+        mainVC.baseArray[0][mainVC.tableView.indexPathForSelectedRow!.row] = task
         self.navigationController?.popViewControllerAnimated(true)
     }
     
