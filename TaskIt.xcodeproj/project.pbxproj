@@ -18,6 +18,7 @@
 		DCC7319E1BDBEF9800BBB579 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7319D1BDBEF9800BBB579 /* Date.swift */; settings = {ASSET_TAGS = (); }; };
 		DCC731A01BDBF39000BBB579 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DCC731AB1BDC309000BBB579 /* taskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731AA1BDC309000BBB579 /* taskModel.swift */; settings = {ASSET_TAGS = (); }; };
+		DCC731AD1BDC401D00BBB579 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731AC1BDC401D00BBB579 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DCC7319D1BDBEF9800BBB579 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		DCC731AA1BDC309000BBB579 /* taskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskModel.swift; sourceTree = "<group>"; };
+		DCC731AC1BDC401D00BBB579 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				DCC731AA1BDC309000BBB579 /* taskModel.swift */,
 				DCC7319B1BDBDEE400BBB579 /* TaskDetailViewController.swift */,
 				DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */,
+				DCC731AC1BDC401D00BBB579 /* SettingsViewController.swift */,
 				DCC7319D1BDBEF9800BBB579 /* Date.swift */,
 				DCC731971BDBD06200BBB579 /* TaskCell.swift */,
 				DCC7316D1BDBC8E400BBB579 /* Main.storyboard */,
@@ -276,6 +279,7 @@
 				DCC7319C1BDBDEE400BBB579 /* TaskDetailViewController.swift in Sources */,
 				DCC731AB1BDC309000BBB579 /* taskModel.swift in Sources */,
 				DCC731A01BDBF39000BBB579 /* AddTaskViewController.swift in Sources */,
+				DCC731AD1BDC401D00BBB579 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
