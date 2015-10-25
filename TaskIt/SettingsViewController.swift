@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var variableDesc: UILabel!
     let kVersionNum = "Version 1.0.0" //version number
-    let desc = "This app was created by Rosemarie Day, October 23-25, 2015 as a part of HackUMass 2015. My personal challenge was to learn to code more in Swift for iOS Applications."
+    let desc = "This app was created by Rosemarie Day, October 23-25, 2015 as a part of HackUMass 2015. TaskIT's a sleek design containing view controllers and iOS Swift code in order to simplify task the task list. "
     override func viewDidLoad() {
         super.viewDidLoad()
         
