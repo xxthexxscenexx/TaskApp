@@ -122,10 +122,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             baseArray[1].append(newTask)
         }else{
             var newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: false)
-            baseArray[0].append(newTask)
+           //baseArray[0].append(newTask)
         }
         baseArray[indexPath.section].removeAtIndex(indexPath.row)
         tableView.reloadData()
+    }
+    
+    func taskDetailEdited() {
+        showAlert()
+    }
+    
+    func showAlert () {
+        let alert = UIAlertController(title: "A change has been made!", message: "Congratulations", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
 }

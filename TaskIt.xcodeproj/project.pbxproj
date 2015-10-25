@@ -10,7 +10,6 @@
 		DCC7316A1BDBC8E400BBB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731691BDBC8E400BBB579 /* AppDelegate.swift */; };
 		DCC7316C1BDBC8E400BBB579 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7316B1BDBC8E400BBB579 /* ViewController.swift */; };
 		DCC7316F1BDBC8E400BBB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7316D1BDBC8E400BBB579 /* Main.storyboard */; };
-		DCC731711BDBC8E400BBB579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC731701BDBC8E400BBB579 /* Assets.xcassets */; };
 		DCC7317F1BDBC8E400BBB579 /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7317E1BDBC8E400BBB579 /* TaskItTests.swift */; };
 		DCC7318A1BDBC8E400BBB579 /* TaskItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731891BDBC8E400BBB579 /* TaskItUITests.swift */; };
 		DCC731981BDBD06200BBB579 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731971BDBD06200BBB579 /* TaskCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -43,7 +42,6 @@
 		DCC731691BDBC8E400BBB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC7316B1BDBC8E400BBB579 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCC7316E1BDBC8E400BBB579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCC731701BDBC8E400BBB579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC731751BDBC8E400BBB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC7317A1BDBC8E400BBB579 /* TaskItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC7317E1BDBC8E400BBB579 /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				DCC7319D1BDBEF9800BBB579 /* Date.swift */,
 				DCC731971BDBD06200BBB579 /* TaskCell.swift */,
 				DCC7316D1BDBC8E400BBB579 /* Main.storyboard */,
-				DCC731701BDBC8E400BBB579 /* Assets.xcassets */,
 				DCC731751BDBC8E400BBB579 /* Info.plist */,
 			);
 			path = TaskIt;
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC731711BDBC8E400BBB579 /* Assets.xcassets in Resources */,
 				DCC7316F1BDBC8E400BBB579 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
