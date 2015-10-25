@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2AC6161BDD16F0003788E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2AC6151BDD16F0003788E3 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		DCC7316A1BDBC8E400BBB579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC731691BDBC8E400BBB579 /* AppDelegate.swift */; };
 		DCC7316C1BDBC8E400BBB579 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7316B1BDBC8E400BBB579 /* ViewController.swift */; };
 		DCC7316F1BDBC8E400BBB579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7316D1BDBC8E400BBB579 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC2AC6151BDD16F0003788E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCC731661BDBC8E400BBB579 /* TaskIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC731691BDBC8E400BBB579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC7316B1BDBC8E400BBB579 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				DCC731971BDBD06200BBB579 /* TaskCell.swift */,
 				DCC7316D1BDBC8E400BBB579 /* Main.storyboard */,
 				DCC731751BDBC8E400BBB579 /* Info.plist */,
+				DC2AC6151BDD16F0003788E3 /* Images.xcassets */,
 			);
 			path = TaskIt;
 			sourceTree = "<group>";
@@ -199,6 +202,9 @@
 		DCC7315E1BDBC8E400BBB579 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rosie ";
 				TargetAttributes = {
@@ -244,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC7316F1BDBC8E400BBB579 /* Main.storyboard in Resources */,
+				DC2AC6161BDD16F0003788E3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
