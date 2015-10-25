@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				DCC731691BDBC8E400BBB579 /* AppDelegate.swift */,
-				DCC7316B1BDBC8E400BBB579 /* ViewController.swift */,
 				DCC731AA1BDC309000BBB579 /* taskModel.swift */,
+				DCC7316B1BDBC8E400BBB579 /* ViewController.swift */,
 				DCC7319B1BDBDEE400BBB579 /* TaskDetailViewController.swift */,
 				DCC7319F1BDBF39000BBB579 /* AddTaskViewController.swift */,
 				DCC731AC1BDC401D00BBB579 /* SettingsViewController.swift */,
@@ -494,6 +494,7 @@
 				DCC731901BDBC8E400BBB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCC731911BDBC8E400BBB579 /* Build configuration list for PBXNativeTarget "TaskItTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +503,7 @@
 				DCC731931BDBC8E400BBB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCC731941BDBC8E400BBB579 /* Build configuration list for PBXNativeTarget "TaskItUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +512,7 @@
 				DCC731961BDBC8E400BBB579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

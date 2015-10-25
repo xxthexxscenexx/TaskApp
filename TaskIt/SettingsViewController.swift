@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController {
         self.variableLabel.text = kVersionNum;
         self.variableDesc.text = desc;
         
-        var doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("doneBarButtonItemPressed:"))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("doneBarButtonItemPressed:"))
         
         self.navigationItem.leftBarButtonItem = doneButton
         

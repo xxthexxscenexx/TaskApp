@@ -12,13 +12,13 @@ class Date{
 
     class func from (year: Int, month: Int, day: Int) -> NSDate {
         
-        var componenets = NSDateComponents()
+        let componenets = NSDateComponents()
         componenets.year = year
         componenets.month = month
         componenets.day = day
         
-        var gregorianCalendar = NSCalendar(identifier: NSGregorianCalendar)
-        var date = gregorianCalendar?.dateFromComponents(componenets)
+        let gregorianCalendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
+        let date = gregorianCalendar?.dateFromComponents(componenets)
         
         return date!
     }

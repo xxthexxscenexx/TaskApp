@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let task2 = taskModel(task: "Eat Dinner", subtask: "Burgers", date: date2, completed: false)
         let taskArray = [task1, task2, taskModel(task: "Gym", subtask: "Leg Day", date: date3, completed: false)]
         
-        var completedArray = [taskModel(task: "code", subtask: " ", date: date2, completed: true)]
+        let completedArray = [taskModel(task: "code", subtask: " ", date: date2, completed: true)]
         
         baseArray = [taskArray, completedArray]
         
@@ -85,7 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print(indexPath.row)
         
         let thisTask = baseArray[indexPath.section][indexPath.row]
-        var cell: TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as! TaskCell
+        let cell: TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as! TaskCell
         
         cell.TaskLable.text = thisTask.task
         cell.DescriptionLable.text = thisTask.subtask
@@ -118,10 +118,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let thisTask = baseArray[indexPath.section][indexPath.row]
         
         if indexPath.section == 0{
-            var newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: true)
+            let newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: true)
             baseArray[1].append(newTask)
         }else{
-            var newTask = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: false)
+            _ = taskModel(task: thisTask.task, subtask: thisTask.subtask, date: thisTask.date, completed: false)
            //baseArray[0].append(newTask)
         }
         baseArray[indexPath.section].removeAtIndex(indexPath.row)
